@@ -1,0 +1,9 @@
+friends = ["john","Noor","Paola","Karla","Leo"]
+
+print(friends[0])
+print(friends[4])
+
+friends.insert(1, "Kelly")
+friends.insert(6, "Violet")
+
+print(friends)
