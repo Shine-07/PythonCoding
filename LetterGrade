@@ -1,0 +1,27 @@
+
+#ENTER ATEST SCORE FROM KEYBORAD
+#The programme will SHOW YOU A LETTERGRADE
+
+score=int(input("Plz Enter the test score: "))
+print(f"Your score is {score}")
+lettergrade="Not a grade"
+if  score <60:
+    lettergrade="F"
+elif score <70:
+    lettergrade="D"
+elif score <80:
+    lettergrade="C"
+elif score <90:
+    lettergrade="B"
+elif score <100:
+    lettergrade="A"
+else:
+    print("You are an overachiever")
+    lettergrade="A+"
+print("Your grade is " , lettergrade)
+
+#OUTPUT
+
+#Plz Enter the test score:
+#Your score is 90
+#Your grade is A
