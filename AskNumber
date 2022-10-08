@@ -1,0 +1,15 @@
+#ask for a number. If it is in the given list, print
+#it is in the list "It is not in the list."
+#find the sum of number in the given list by loop
+#print the list and sum
+
+number=int(input("Plz Enter the number: "))
+nums=[1,4,5,7]
+if number in nums:
+    print("yeah, it is in list")
+else:
+    print("It is not in a list")
+sum =0
+for x in nums:
+    sum=sum+x
+print(nums, "Sum of them is ", sum)
