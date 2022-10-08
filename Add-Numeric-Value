@@ -1,0 +1,12 @@
+pizza_toppings = ['pepperoni', 'mushroom', 'Three-Cheese']
+
+for i, pizza_topping in enumerate(pizza_toppings):
+    print("My favorite pizza {} is {}".format(i + 1, pizza_topping))
+
+
+
+
+#OUTPUT
+# My favorite pizza 1 is Pepperoni
+# My favorite pizza 2 is Mushroom
+# My favorite pizza 3 is Three-Cheese
