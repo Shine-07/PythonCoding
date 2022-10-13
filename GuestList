@@ -1,0 +1,16 @@
+
+#Create guest list and check if you are invited or not:
+
+
+guests = ["Johnny","Kelly","Jacke","Sofia","Iryna","Stephanie","Hisham","Brook"]
+
+
+name = input("Enter your name: ")
+
+if name in guests:
+
+    print("You are among the invited guests.")
+
+else:
+
+    print("You are not on the guest list.")
