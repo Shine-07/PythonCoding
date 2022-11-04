@@ -1,0 +1,13 @@
+'''Using a while loop print side by side Celsius
+temperature from 0 to 20, and corresponding Fahrenheit temperature, such as
+
+Celsius: 0    Fahrenheit: 32
+Celsius: 1    Fahrenheit: 33.8'''
+
+Celsius = 0
+Fahrenheit = 32
+
+ while Celsius <= 20:
+   print("Celsius:", Celsius, "Fahrenheit:", Fahrenheit)
+   Celsius = Celsius + 1
+   Fahrenheit = Fahrenheit + 1.8
