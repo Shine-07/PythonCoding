@@ -1,0 +1,12 @@
+'''Create a program that asks for a Celsius temperature, then call a function convertToFahr(...) that returns the corresponding Fahrenheit temperature, 
+print both temperatures after getting back a Fahrenheit temperature from convertToFahr(...) function'''
+
+tempC = float(input("Enter the temperature in Celsius: "))
+
+def convertToFahr(tempC):
+   tempF = (tempC * 1.8) + 32
+   return tempF
+
+print("The temperature in Fahrenheit is:", convertToFahr(tempC))
+
+
