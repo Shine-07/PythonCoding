@@ -1,0 +1,30 @@
+lass Robot:
+    def __init__(self,name,weight,material="iron",battery_type="12v"):
+        self.name=name
+        self.material=material
+        self.battery_type=battery_type
+        self.weight=weight
+    def turn_left(self):
+        print("I am " +self.name+" ,turning left")
+    def turn_right(self):
+        print("I am " +self.name+" ,turning right")
+    def print_info(self):
+        print("I am a robot called "+ self.name + " made of " + self.material+"and powered by " + self.battery_type +"and as heavy as " + str(self.weight)+ " pounds") 
+       
+class RoboticArm(Robot):
+    def __init__(self, arm_length,name,weight,material="iron",battery_type="12v"):
+        super().__init__(name,weight,material,battery_type)
+        self.arm_length=arm_length
+    def print_info(self):
+        super().print_info()
+        print("Also I have a robotic arm with a lengthof " + str(self.arm_length))
+
+
+Kelly=Robot("Kelly",10,"Copper","36")
+Alexa=Robot("Alexa",12)
+Jessy=Robot("Jessy",15,"Composit Plasitic", "40v")
+Alexa.turn_left()
+Jessy.turn_right()
+Alexa.print_info()
+robot_with_arm=RoboticArm("10cm", "Kelly-with-an-Arm", 120, "copper","40volt")
+robot_with_arm.print_info()
