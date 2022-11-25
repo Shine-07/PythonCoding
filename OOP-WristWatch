@@ -1,0 +1,32 @@
+class WristWatch: # class WristWatch
+    def __init__(self,hours,minutes,seconds): # constructor to initialize the values
+        self.hours=hours
+        self.minutes=minutes
+        self.seconds=seconds
+    def addhours(self): # method to add hours
+        if(self.hours>=12):
+            self.hours=1
+        else:
+            self.hours+=1
+    def addminutes(self): # method to add minutes
+        if(self.minutes==60):
+            addhour();
+            self.minutes=0
+        else:
+            self.minutes+=1
+    def addseconds(self): # method to add seconds
+        if(self.seconds==60):
+            addminutes()
+            self.seconds=0
+        else:
+            self.seconds+=1
+    def print_time(self): # method to print time
+        if(self.minutes<10):
+            print(str(self.hours)+":0"+str(self.minutes)+":0"+str(self.seconds))
+        else:
+             print(str(self.hours)+":"+str(self.minutes)+":"+str(self.seconds))
+obj=WristWatch(10,22,20) # object creation
+obj.addhours() # calling addhours() function
+obj.addminutes() # calling addminutes() method
+obj.addseconds() # calling addseconds() method
+obj.print_time()
